@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="App.js" defer></script>
+  </head>
+  <body>
+    <div class="mealContainer">
+      <nav>
+        <span class="logo-img"><img src="food-2085075_1280.webp"></span>
+        <h1>Meal Planner</h1>
+      </nav>
 
+      <div class="input1">
+        <input
+          type="number"
+          min="0"
+          placeholder="Enter Height (in cm)"
+          id="height"
+        />
+        <input
+          type="number"
+          placeholder="Enter Weight (in kgs.)"
+          min="0"
+          id="weight"
+        />
+        <input
+          type="number"
+          placeholder="Enter Age (in yrs.)"
+          min="0"
+          id="age"
+        />
+      </div>
+      <div class="input2">
+        <!-- <input type="text" placeholder="Enter Gender" id="gender" /> -->
+        <select name="base" id="gender">
+          <option>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <select name="base" id="activity">
+          <option>Activity Level</option>
+          <option value="light">Light</option>
+          <option value="moderate">Moderate</option>
+          <option value="active">Active</option>
+        </select>
+      </div>
+      <div class="meal-button">
+        <button class="meal-btn" type="button" id="btn">Generate Meal</button>
+      </div>
+
+      <section class="meal-heading">
+        <h2>Breakfast</h2>
+        <h2>Lunch</h2>
+        <h2>Dinner</h2>
+      </section>
+      <!-- main -->
+      <div class="meals">
+        <div class="card-box"></div>
+      </div>
+      <div id="load" style="display: none">
+        <div class="lds-circle"><div></div></div>
+      </div>
+      <section class="recipe">
+        <div class="bg">
+          <div class="dish">
+            <span class="ingrediants"> </span>
+            <span class="equipment"> </span>
+          </div>
+          <aside class="steps"></aside>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
