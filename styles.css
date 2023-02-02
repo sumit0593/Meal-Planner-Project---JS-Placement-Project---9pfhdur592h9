@@ -1,14 +1,16 @@
 :root {
-  --primary: rgb(8, 66, 25);
-  --secondary: #ffffff;
+  --primary: rgba(0, 24, 3, 0.9);
+  --secondary: rgba(234, 234, 21, 0.9);
 }
 * {
   scroll-behavior: smooth;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 body {
-  background-color: rgba(0, 0, 0);
+  background-color: white;
+  background-image:url("top-view-assortment-tasty-meal_23-2148484660.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: 1s;
 }
 nav {
@@ -16,15 +18,24 @@ nav {
   background-color: var(--primary);
   margin: 0 auto;
   color: var(--secondary);
-  height: 40px;
+  height: 15vh;
   text-align: center;
+  border-bottom: 10px double crimson;
+}
+.logo-img {
+  margin: 30px;
 }
 nav h1 {
-  font-size: 30px;
+  font-size: 15vh;
+  letter-spacing: 10px;
   font-style: italic;
+  font-weight: 900;
+  word-spacing: 30px;
+  margin: 0 auto;
 }
 input {
-  background-color: rgb(199, 194, 194);
+  background-color: rgb(0, 0, 0);
+  color: white;
   padding: 8px;
   border-radius: 5px;
   text-align: center;
@@ -133,8 +144,8 @@ button:active {
 }
 .recipe {
   padding: 50px;
-  background-color: white;
-  color: black;
+  background-color: rgb(91, 91, 9);
+  color: white;
   font-size: 20px;
 }
 .recipe h2 {
@@ -164,7 +175,11 @@ button:active {
 .meal-heading h2 {
   text-align: center;
   height: auto;
-  color: #ffffff;
+  color: black;
+  font-weight: 900;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
 }
 @keyframes lds-circle {
   0%,
@@ -201,8 +216,8 @@ li {
   background-repeat: no-repeat;
 }
 img{
-  height: 4vh;
-  width: 4vh;
+  height: 9vh;
+  width: 12vh;
 }
 /* Media Query for Mobile Devices */
 @media (max-width: 520px) {
