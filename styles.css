@@ -8,7 +8,7 @@
 }
 body {
   background-color: white;
-  background-image:url("top-view-assortment-tasty-meal_23-2148484660.jpg");
+  background-image: url("top-view-assortment-tasty-meal_23-2148484660.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: 1s;
@@ -197,9 +197,6 @@ button:active {
     transform: rotateY(3600deg);
   }
 }
-.recipe {
-  width: 100%;
-}
 .bg,
 .input-box {
   display: none;
@@ -215,7 +212,7 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
 }
-img{
+img {
   height: 9vh;
   width: 12vh;
 }
